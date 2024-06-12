@@ -5,14 +5,17 @@
 namespace learning {
     class GradientDescent {
         private:
-        double inputLayer, hiddenLayer, outputLayer;
+        double* inputLayer, hiddenLayer, outputLayer;
         double learningRate;
+
         std::vector<std::vector<double>> weightsInputHidden;
         std::vector<std::vector<double>> weightsHiddenOutput;
 
         public:
-        GradientDescent(double inputLayer, double hiddenLayer, double outputLayer);
-        void weightLearning();
+        GradientDescent(double** inputLayer, double** hiddenLayer, double** outputLayer);
+        
+        void learningModel();
+        double** weightLearning(double** layerWeight);
     };
 };
 
