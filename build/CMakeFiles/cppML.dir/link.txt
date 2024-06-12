@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cppML.dir/src/main.cpp.o CMakeFiles/cppML.dir/src/GradientDescent.cpp.o CMakeFiles/cppML.dir/src/readCSV.cpp.o -o cppML 
